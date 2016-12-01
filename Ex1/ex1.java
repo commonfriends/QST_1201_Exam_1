@@ -15,6 +15,15 @@ public class QSTLinkList
 		}
 	}
 	private static void printLinkList(Node head) {
+		if (head == null) {
+			System.out.println("链表为空！");
+		} else {
+			System.out.print(head.value);
+			while (head.next != null) {
+				System.out.print("->" + head.next.value);
+				head = head.next;
+			}
+		}
 	}
   
   public static void main( String[] args ){
